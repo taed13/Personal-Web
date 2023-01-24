@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Webpage </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700&amp;display=swap" rel="stylesheet">
+    <style type="text/css">
+        #_copy {
+            align-items: center;
+            background: #4494d5;
+            border-radius: 3px;
+            color: #fff;
+            cursor: pointer;
+            display: flex;
+            font-size: 13px;
+            height: 30px;
+            justify-content: center;
+            position: absolute;
+            width: 60px;
+            z-index: 1000
+        }
+
+        #select-tooltip,
+        #sfModal,
+        .modal-backdrop,
+        div[id^=reader-helper] {
+            display: none !important
+        }
+
+        .modal-open {
+            overflow: auto !important
+        }
+
+        ._sf_adjust_body {
+            padding-right: 0 !important
+        }
+
+        .super_copy_btns_div {
+            position: fixed;
+            width: 154px;
+            left: 10px;
+            top: 45%;
+            background: #e7f1ff;
+            border: 2px solid #4595d5;
+            font-weight: 600;
+            border-radius: 2px;
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+            z-index: 5000
+        }
+
+        .super_copy_btns_logo {
+            width: 100%;
+            background: #4595d5;
+            text-align: center;
+            font-size: 12px;
+            color: #e7f1ff;
+            line-height: 30px;
+            height: 30px
+        }
+
+        .super_copy_btns_btn {
+            display: block;
+            width: 128px;
+            height: 28px;
+            background: #7f5711;
+            border-radius: 4px;
+            color: #fff;
+            font-size: 12px;
+            border: 0;
+            outline: 0;
+            margin: 8px auto;
+            font-weight: 700;
+            cursor: pointer;
+            opacity: .9
+        }
+
+        .super_copy_btns_btn:hover {
+            opacity: .8
+        }
+
+        .super_copy_btns_btn:active {
+            opacity: 1
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar" class="nav">
+        <ul class="nav-list">
+            <li>
+                <a href="#welcome-section">About</a>
+            </li>
+            <li>
+                <a href="#projects">Work</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <section class="welcome-section" id="welcome-section">
+        <h1>Hey I am TAED13_</h1>
+        <p>people call me Datamin</p>
+        <p>imma web developer</p>
+    </section>
+    <section class="projects-section" id="projects">
+        <h2 class="projects-section-header">These are some of my projects</h2>
+        <div class="projects-grid">
+
+            <a href="./Build a Technical Documentation Page/index.html" target="_blank" class="project project-tile">
+                <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" alt="project"
+                    class="project-image">
+                <p class="project-title">
+                    <span class="code">&lt;</span>
+                    JS Documentation
+                    <span class="code">&#47;&gt;</span>
+                </p>
+            </a>
+
+            <a href="./Building a Ferris Wheel/index.html" target="_blank" class="project project-tile">
+                <img src="./template/giphy.gif" alt="ferris wheel" class="project-image">
+                <p class="project-title">
+                    <span class="code">&lt;</span>
+                    Ferris Wheel
+                    <span class="code">&#47;&gt;</span>
+                </p>
+            </a>
+
+            <a href="./Building a magazine/index.html" target="_blank" class="project project-tile">
+                <img src="./template/magazine screen short.png" alt="project" class="project-image">
+                <p class="project-title">
+                    <span class="code">&lt;</span>
+                    Magazine
+                    <span class="code">&#47;&gt;</span>
+                </p>
+            </a>
+
+            <a href="./Building a Penguin/index.html" target="_blank" class="project project-tile">
+                <img src="./template/penguin.png" alt="project" class="project-image">
+                <p class="project-title">
+                    <span class="code">&lt;</span>
+                    A Penguin
+                    <span class="code">&#47;&gt;</span>
+                </p>
+            </a>
+
+            <a href="./City Sky Line/index.html" target="_blank" class="project project-tile">
+                <img src="./template/city sky line.png" alt="project" class="project-image">
+                <p class="project-title">
+                    <span class="code">&lt;</span>
+                    City Sky Line
+                    <span class="code">&#47;&gt;</span>
+                </p>
+            </a>
+
+            <a href="./Product Landing Page/index.html" target="_blank" class="project project-tile">
+                <img src="./template/landing page.png" alt="project" class="project-image">
+                <p class="project-title">
+                    <span class="code">&lt;</span>
+                    Landing Page
+                    <span class="code">&#47;&gt;</span>
+                </p>
+            </a>
+
+            <a href="https://codepen.io/freeCodeCamp/full/zNqgVx" target="_blank" class="project project-tile">
+                <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" alt="project"
+                    class="project-image">
+                <p class="project-title">
+                    <span class="code">&lt;</span>
+                    Tribute Page
+                    <span class="code">&#47;&gt;</span>
+                </p>
+            </a>
+
+            <a href="https://codepen.io/freeCodeCamp/full/qRZeGZ" target="_blank" class="project project-tile">
+                <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png"
+                    alt="project" class="project-image">
+                <p class="project-title">
+                    <span class="code">&lt;</span>
+                    Random Quote Machine
+                    <span class="code">&#47;&gt;</span>
+                </p>
+            </a>
+
+            <a href="https://codepen.io/freeCodeCamp/full/wgGVVX" target="_blank" class="project project-tile">
+                <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png" alt="project"
+                    class="project-image">
+                <p class="project-title">
+                    <span class="code">&lt;</span>
+                    JavaScript Calculator
+                    <span class="code">&#47;&gt;</span>
+                </p>
+            </a>
+
+            <a href="https://codepen.io/freeCodeCamp/full/mVEJag" target="_blank" class="project project-tile">
+                <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/map.jpg" alt="project"
+                    class="project-image">
+                <p class="project-title">
+                    <span class="code">&lt;</span>
+                    Map Data Across the Globe
+                    <span class="code">&#47;&gt;</span>
+                </p>
+            </a>
+
+            <a href="https://codepen.io/freeCodeCamp/full/wGqEga" target="_blank" class="project project-tile">
+                <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/wiki.png" alt="project"
+                    class="project-image">
+                <p class="project-title">
+                    <span class="code">&lt;</span>
+                    Wikipedia Viewer
+                    <span class="code">&#47;&gt;</span>
+                </p>
+            </a>
+
+            <a href="https://codepen.io/freeCodeCamp/full/KzXQgy" target="_blank" class="project project-tile">
+                <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tic-tac-toe.png" alt="project"
+                    class="project-image">
+                <p class="project-title">
+                    <span class="code">&lt;</span>
+                    Tic Tac Toe Game
+                    <span class="code">&#47;&gt;</span>
+                </p>
+            </a>
+        </div>
+        <a href="https://codepen.io/FreeCodeCamp/" class="btn btn-show-all" target="_blank">
+            Show all
+            <i class="fas fa-chevron-right"></i>
+        </a>
+    </section>
+    <section id="contact" class="contact-section">
+        <div class="contact-section-header">
+            <h2>Let's work together...</h2>
+            <p>How do you take your coffee?</p>
+        </div>
+        <div class="contact-links">
+            <a href="https://www.facebook.com/freecodecamp" target="_blank" class="btn contact-details">
+                <i class="fab fa-facebook-square"></i>
+                Facebook
+            </a>
+            <a id="profile-link" href="https://github.com/freecodecamp" target="_blank" class="btn contact-details">
+                <i class="fab fa-github"></i>
+                Github
+            </a>
+            <a href="https://twitter.com/freecodecamp" target="_blank" class="btn contact-details">
+                <i class="fab fa-twitter"></i>
+                Twitter
+            </a>
+            <a href="mailto:example@example.com" class="btn contact-details">
+                <i class="fas fa-at"></i>
+                Send a email
+            </a>
+            <a href="tel:555-555-5555" class="btn contact-details">
+                <i class="fas fa-mobile-alt"></i>
+                Call me
+            </a>
+        </div>
+    </section>
+    <footer>
+        <p>
+            **This is just a fake portfolio. All the projects and contact details
+            given are not real.
+        </p>
+        <p>
+            © Created for
+            <a href="https://www.freecodecamp.com/" target="_blank">
+                freeCodeCamp
+                <i class="fab fa-free-code-camp"></i>
+            </a>
+        </p>
+    </footer>
+</body>
+
+</html>

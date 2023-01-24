@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Lading Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <style type="text/css">
+        #_copy {
+            align-items: center;
+            background: #4494d5;
+            border-radius: 3px;
+            color: #fff;
+            cursor: pointer;
+            display: flex;
+            font-size: 13px;
+            height: 30px;
+            justify-content: center;
+            position: absolute;
+            width: 60px;
+            z-index: 1000
+        }
+
+        #select-tooltip,
+        #sfModal,
+        .modal-backdrop,
+        div[id^=reader-helper] {
+            display: none !important
+        }
+
+        .modal-open {
+            overflow: auto !important
+        }
+
+        ._sf_adjust_body {
+            padding-right: 0 !important
+        }
+
+        .super_copy_btns_div {
+            position: fixed;
+            width: 154px;
+            left: 10px;
+            top: 45%;
+            background: #e7f1ff;
+            border: 2px solid #4595d5;
+            font-weight: 600;
+            border-radius: 2px;
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+            z-index: 5000
+        }
+
+        .super_copy_btns_logo {
+            width: 100%;
+            background: #4595d5;
+            text-align: center;
+            font-size: 12px;
+            color: #e7f1ff;
+            line-height: 30px;
+            height: 30px
+        }
+
+        .super_copy_btns_btn {
+            display: block;
+            width: 128px;
+            height: 28px;
+            background: #7f5711;
+            border-radius: 4px;
+            color: #fff;
+            font-size: 12px;
+            border: 0;
+            outline: 0;
+            margin: 8px auto;
+            font-weight: 700;
+            cursor: pointer;
+            opacity: .9
+        }
+
+        .super_copy_btns_btn:hover {
+            opacity: .8
+        }
+
+        .super_copy_btns_btn:active {
+            opacity: 1s
+        }
+    </style>
+</head>
+
+<body>
+    <div id="page-wrapper">
+        <header id="header">
+            <div class="logo">
+                <img id="header-img"
+                    src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
+                    alt="original trombones logo">
+            </div>
+            <nav id="nav-bar">
+                <ul>
+                    <li>
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#how-it-works">How It Works</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#pricing">Pricing</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container"></div>
+        <section id="hero">
+            <h2>Handcrafted, home-made masterpieces</h2>
+            <form action="https://www.freecodecamp.com/email-submit" id="form">
+                <input type="email" name="email" id="email" placeholder="Enter your email address" required>
+                <input type="submit" id="submit" value="Get Started" class="btn">
+            </form>
+        </section>
+        <div class="container">
+            <section id="features">
+                <div class="grid">
+                    <div class="icon">
+                        <i class="fa fa-3x fa-fire">
+                        </i>
+                    </div>
+                    <div class="desc">
+                        <h2>Premium Materials</h2>
+                        <p>
+                            Our trombones use the shiniest brass which is sourced locally.
+                            This will increase the longevity of your purchase.
+                        </p>
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="icon">
+                        <i class="fa fa-3x fa-truck">
+                        </i>
+                    </div>
+                    <div class="desc">
+                        <h2>Fast Shipping</h2>
+                        <p>
+                            We make sure you recieve your trombone as soon as we have
+                            finished making it. We also provide free returns if you are not
+                            satisfied.
+                        </p>
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="icon">
+                        <i class="fa fa-3x fa-battery-full" aria-hidden="true">
+                        </i>
+                    </div>
+                    <div class="desc">
+                        <h2>Quality Assurance</h2>
+                        <p>
+                            For every purchase you make, we will ensure there are no damages
+                            or faults and we will check and test the pitch of your
+                            instrument.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section id="how-it-works">
+                <iframe id="video" height="315"
+                    src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&controls=0&showinfo=0" frameborder="0"
+                    allowfullscreen>
+                </iframe>
+            </section>
+            <section id="pricing">
+                <div class="product" id="tenor">
+                    <div class="level">Tenor Trombone</div>
+                    <h2>$600</h2>
+                    <ol>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum.</li>
+                    </ol>
+                    <button class="btn">Select</button>
+                </div>
+                <div class="product" id="bass">
+                    <div class="level">Bass Trombone</div>
+                    <h2>$900</h2>
+                    <ol>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum.</li>
+                    </ol>
+                    <button class="btn">Select</button>
+                </div>
+                <div class="product" id="valve">
+                    <div class="level">Valve Trombone</div>
+                    <h2>$600</h2>
+                    <ol>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum.</li>
+                        <li>Lorem ipsum.</li>
+                    </ol>
+                    <button class="btn">Select</button>
+                </div>
+            </section>
+            <footer>
+                <ul>
+                    <li>
+                        <a href="#">Privacy</a>
+                    </li>
+                    <li>
+                        <a href="#">Terms</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+                <span>Copyright 2016, Original Trombones</span>
+            </footer>
+        </div>
+
+    </div>
+</body>
+
+</html>
